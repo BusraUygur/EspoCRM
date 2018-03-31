@@ -30,4 +30,3 @@ Feature: Creating email
     When I click on Tasks
     Then "Meeting" should be displayed
     Then I logout from application
-
