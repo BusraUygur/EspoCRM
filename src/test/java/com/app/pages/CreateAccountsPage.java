@@ -1,5 +1,7 @@
 package com.app.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -87,8 +89,18 @@ public class CreateAccountsPage {
 	public WebElement descriptionAccounts;
 	
 	@FindBy(xpath="//button[@class='btn btn-primary action']")
-	public WebElement saveAccounts;
+	public WebElement saveConfirmation;
 	
-	
+	public void save() {
+		saveConfirmation.click();
+		try {
+			Driver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+			saveConfirmation.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
 
 }
