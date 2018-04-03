@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.app.pages.CreateAccountsPage;
 import com.app.pages.EspoCRMLoginPage;
+import com.app.utilities.BrowserUtils;
 import com.app.utilities.ConfigurationReader;
 import com.app.utilities.Driver;
 
@@ -37,7 +38,7 @@ public class CreateAccountsStepDefinitions {
 	public void i_clicked_on_create_account() throws InterruptedException {
 		createAccount.account.click();
 		createAccount.createAccount.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		String actualAccountTitle = driver.getTitle();
 		String expectedAccountTitle = "Create Account";
 
@@ -93,10 +94,23 @@ public class CreateAccountsStepDefinitions {
 	 }
 	
 	 @Then("^I should see account details on Accounts page$")
-	 public void i_should_see_account_details_on_Accounts_page() {
+	 public void i_should_see_account_details_on_Accounts_page() throws InterruptedException {
 		 String actualTitleofAccout = driver.getTitle();
 		 String expectedTitleOfAccountPage = "Mikez";
 		 
 		 assertEquals(actualTitleofAccout, expectedTitleOfAccountPage);
+		 
+		 Thread.sleep(2000);
+		
+		 createAccount.account.click();
+		 createAccount.checkbox.click();
+		 createAccount.actionsButton.click();
+		 createAccount.Remove.click();
+		 
+		 createAccount.confirmRemove.click();
+		 
+		 
+	
+		 
 	 }
 }
