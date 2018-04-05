@@ -52,7 +52,7 @@ public class CreateEmailsStepDefinitions {
 
 	@Then("^the sent email should be displayed$")
 	public void the_sent_email_should_be_displayed() {
-		String expected="Zia Miakhel";
+		String expected="test@cybertekshcool.com";
 		String actual=emailPage.sentEmail.getText().substring(4);
 		assertEquals(expected, actual);
 		

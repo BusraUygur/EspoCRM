@@ -102,15 +102,8 @@ public class CreateAccountsStepDefinitions {
 		 
 		 Thread.sleep(2000);
 		
-		 createAccount.account.click();
-		 createAccount.checkbox.click();
-		 createAccount.actionsButton.click();
-		 createAccount.Remove.click();
+		createAccount.cleanUp();
 		 
-		 createAccount.confirmRemove.click();
-		 
-		 
-	
-		 
+		 	 
 	 }
 }

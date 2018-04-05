@@ -1,7 +1,7 @@
 
 Feature: Create accounts
 
-  @account
+  @smoke
   Scenario: Creating account
     Given I logged into EspoCRM
     And I clicked on create account

@@ -115,5 +115,14 @@ public class CreateAccountsPage {
 		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
+	
+	public void cleanUp() {
+		account.click();
+		checkbox.click();
+		actionsButton.click();
+		Remove.click();
+		confirmRemove.click();
+		
+	}
 
 }

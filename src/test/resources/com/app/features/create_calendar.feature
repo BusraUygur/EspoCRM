@@ -1,7 +1,6 @@
-Feature: Creating an event
+Feature: Creating a meeting
 
-	 @f&f
-  Scenario: Create an event
+  Scenario: Create a meeting
     Given I logged into EspoCRM
     And I click on Calendar
     And I click on current date
