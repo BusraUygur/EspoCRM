@@ -98,7 +98,7 @@ public class CreateTasksStepDefinitions {
 	@Then("^I should see task's details on Task page$")
 	public void i_should_see_task_s_details_on_Task_page() {
 		
-		assertTrue(taskOverview.Overview.isDisplayed());
+		assertTrue(taskOverview.Overview11.isDisplayed());
 		
 		overviewMap.put("Name", taskOverview.nameTask.getAttribute("value"));
 		overviewMap.put("Status", taskOverview.statusTask.getAttribute("value"));
