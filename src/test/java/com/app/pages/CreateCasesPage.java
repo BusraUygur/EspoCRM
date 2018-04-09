@@ -57,7 +57,7 @@ public class CreateCasesPage {
 		@FindBy(xpath="(//span[@class='glyphicon glyphicon-arrow-up'])[1]")
 		public WebElement contactSelectButton;
 		
-		//
+		
 		@FindBy(xpath="//input[@name='assignedUserName']")
 		public WebElement assignedUser;
 		
