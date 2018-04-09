@@ -77,7 +77,12 @@ public class CreateCasesPage {
 		public WebElement saveButton;
 		
 		
+		@FindBy(xpath="//textarea[@class='note form-control']")
+		public WebElement textArea;
 		
+		@FindBy(xpath="//button[@class='btn btn-primary post']")
+		public WebElement clickPost;
+
 		
 
 }
