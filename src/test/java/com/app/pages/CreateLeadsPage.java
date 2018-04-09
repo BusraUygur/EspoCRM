@@ -94,7 +94,7 @@ public class CreateLeadsPage {
 	@FindBy(xpath="//textarea[@name='description']")
 	public WebElement description;
 	
-	@FindBy(linkText="Save")
+	@FindBy(xpath="//button[@data-action='save']")
 	public WebElement save;
 	
 	@FindBy(xpath="//textarea[@class='note form-control']")
@@ -127,7 +127,20 @@ public class CreateLeadsPage {
 	@FindBy(xpath="//span//p")
 	public WebElement postedText;
 	
+	@FindBy(xpath="//a[@class='btn btn-default action']")
+	public WebElement convert;
 	
+	@FindBy(xpath="//input[@data-scope='Contact']")
+	public WebElement contact;
+	
+	@FindBy(xpath="//button[@data-action='convert']")
+	public WebElement secondConvert;
+	
+	@FindBy(xpath="//span[@class='label label-success']")
+	public WebElement converted;
+	
+	@FindBy(xpath="(//div[@class='pull-left'])[2]")
+	public WebElement leadAfterCreated;
 	
 	
 	
