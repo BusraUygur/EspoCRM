@@ -89,7 +89,20 @@ public class CreateAccountsPage {
 	public WebElement descriptionAccounts;
 	
 	@FindBy(xpath="//button[@class='btn btn-primary action']")
+	
 	public WebElement saveConfirmation;
+	
+	@FindBy (xpath="//input[@class='select-all']")
+	public WebElement checkbox;
+	
+	@FindBy (xpath="(//button[@data-toggle='dropdown'])[3]")
+	public WebElement actionsButton;
+	
+	@FindBy (xpath="//a[@data-action='remove']")
+	public WebElement Remove;
+	
+	@FindBy (xpath="//button[@data-name='confirm']")
+	public WebElement confirmRemove;
 	
 	public void save() {
 		saveConfirmation.click();
@@ -101,6 +114,15 @@ public class CreateAccountsPage {
 		}
 		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+	}
+	
+	public void cleanUp() {
+		account.click();
+		checkbox.click();
+		actionsButton.click();
+		Remove.click();
+		confirmRemove.click();
+		
 	}
 
 }

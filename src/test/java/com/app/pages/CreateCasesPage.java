@@ -57,7 +57,7 @@ public class CreateCasesPage {
 		@FindBy(xpath="(//span[@class='glyphicon glyphicon-arrow-up'])[1]")
 		public WebElement contactSelectButton;
 		
-		//
+		
 		@FindBy(xpath="//input[@name='assignedUserName']")
 		public WebElement assignedUser;
 		
@@ -77,7 +77,12 @@ public class CreateCasesPage {
 		public WebElement saveButton;
 		
 		
+		@FindBy(xpath="//textarea[@class='note form-control']")
+		public WebElement textArea;
 		
+		@FindBy(xpath="//button[@class='btn btn-primary post']")
+		public WebElement clickPost;
+
 		
 
 }

@@ -27,13 +27,6 @@ public class CreateEmailsStepDefinitions {
 	CreateCasesPage casePage = new CreateCasesPage();
 	CreateEmailsPage emailPage = new CreateEmailsPage();
 
-	@Given("^I logged into espoCRM$")
-	public void i_logged_into_espoCRM() {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get(ConfigurationReader.getProperty("url"));
-		loginPage.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
-	}
-
 	@When("^I click on emails$")
 	public void i_click_on_emails() {
 		emailPage.email.click();
@@ -59,7 +52,7 @@ public class CreateEmailsStepDefinitions {
 
 	@Then("^the sent email should be displayed$")
 	public void the_sent_email_should_be_displayed() {
-		String expected="Zia Miakhel";
+		String expected="test@cybertekshcool.com";
 		String actual=emailPage.sentEmail.getText().substring(4);
 		assertEquals(expected, actual);
 		
