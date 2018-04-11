@@ -15,9 +15,8 @@ import cucumber.api.java.Before;
 public class Hooks {
 	@Before
 	public void setUp(Scenario scenario) {
-		WebDriver driver = Driver.getDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//driver.manage().window().fullscreen();
+		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Driver.getDriver().manage().window().fullscreen();
 	}
 
 	@After

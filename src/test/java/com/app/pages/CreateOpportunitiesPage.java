@@ -1,6 +1,5 @@
 package com.app.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,11 +8,9 @@ import com.app.utilities.Driver;
 
 public class CreateOpportunitiesPage {
 
-	private WebDriver driver;
 
 	public CreateOpportunitiesPage() {
-		this.driver = Driver.getDriver();
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(Driver.getDriver(), this);
 	};
 	
 	@FindBy(xpath="//li[@data-name='Opportunity']")
@@ -46,7 +43,7 @@ public class CreateOpportunitiesPage {
 	@FindBy(xpath="//span[@class='month active']")
 	public WebElement selectDate;
 	
-	@FindBy(xpath="//td[@class='today active day']")
+	@FindBy(xpath="//td[@class='today day']")
 	public WebElement selectDay;
 	
 	@FindBy(xpath="//div[@data-name='contacts']//button[@class='btn btn-default']")
@@ -64,19 +61,19 @@ public class CreateOpportunitiesPage {
 	@FindBy(xpath="//textarea[@name='description']")
 	public WebElement description;
 	
-	@FindBy(linkText="Save")
+	@FindBy(xpath="//button[@class='btn btn-primary action']")
 	public WebElement save;
 	
 	@FindBy(xpath="//a[@id='nav-more-tabs-dropdown']")
 	public WebElement dropdownToggle;
 	
-	@FindBy(xpath="//li[@data-name='Stream']")
+	@FindBy(xpath="//textarea[@class='note form-control']")
 	public WebElement stream;
 	
 	@FindBy(xpath="//a[@title='john']")
 	public WebElement personIsInStream;
 	
-	@FindBy(xpath="//td[@data-name='name']")
+	@FindBy(xpath="(//div[@data-name='name'])[2]")
 	public WebElement checkNameInOpportunies;
 	
 	@FindBy(xpath="//td[@data-name='account']")
@@ -91,8 +88,15 @@ public class CreateOpportunitiesPage {
 	@FindBy(xpath="//td[@data-name='createdAt']")
 	public WebElement checkcreatedAtInOpportunies;
 	
-	@FindBy(xpath="///td[@data-name='amount']")
+	@FindBy(xpath="//td[@data-name='amount']")
 	public WebElement checkAmountInOpportunies;
+	
+	@FindBy(xpath="//button[@class='btn btn-primary post']")
+	public WebElement postComment;
+	
+	@FindBy(xpath="//textarea[@class='note form-control']")
+	public WebElement showComment;
+	
 	
 	
 	

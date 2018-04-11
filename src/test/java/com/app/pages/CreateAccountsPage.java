@@ -11,11 +11,11 @@ import com.app.utilities.Driver;
 
 public class CreateAccountsPage {
 
-	private WebDriver driver;
+//	private WebDriver driver;
 
 	public CreateAccountsPage() {
-		this.driver = Driver.getDriver(); 
-		PageFactory.initElements(driver, this); 
+//		this.driver = Driver.getDriver(); 
+		PageFactory.initElements(Driver.getDriver(), this); 
 
 	} 
 	
