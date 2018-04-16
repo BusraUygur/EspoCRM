@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I logged in into suiteCRM (PASSED : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I open the meeting module page (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter the full name &quot;Steven Spielberg&quot; (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I check the status and make it planned (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I write meeting Date start (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I write duration of the meeting (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I write the description of the meeting (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I open parent field and choose Lead option (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I write Date End of the meeting (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I write Remind me before 30 minutes (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on the save button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should see contact infromation for &quot;Steven Spielberg&quot; (PASSED : 1s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16305" started-at="2018-04-13T05:50:54Z" finished-at="2018-04-13T05:51:10Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@402a079c]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="16305" started-at="2018-04-13T05:50:54Z" finished-at="2018-04-13T05:51:10Z">
+      <class name="com.app.runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@402a079c]" name="setUpClass" is-config="true" duration-ms="222" started-at="2018-04-13T05:50:54Z" finished-at="2018-04-13T05:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@402a079c]" name="runScenario" duration-ms="16014" started-at="2018-04-13T05:50:54Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-13T05:51:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create schedule in meeting modules"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creating contacts"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I logged in into suiteCRM (PASSED : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I open the meeting module page (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter the full name &quot;Steven Spielberg&quot; (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I check the status and make it planned (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I write meeting Date start (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I write duration of the meeting (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I write the description of the meeting (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I open parent field and choose Lead option (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I write Date End of the meeting (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I write Remind me before 30 minutes (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on the save button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should see contact infromation for &quot;Steven Spielberg&quot; (PASSED : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@402a079c]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2018-04-13T05:51:10Z" finished-at="2018-04-13T05:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.app.runners.CukesRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
