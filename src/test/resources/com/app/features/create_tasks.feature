@@ -1,6 +1,6 @@
 Feature: Creating task
 
-	 @smoke1
+	 @smoke1 
   Scenario: Create a task
     Given I logged into EspoCRM
     And I click on Tasks
