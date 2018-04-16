@@ -68,4 +68,7 @@ public class CreateContactsPage {
 	@FindBy(xpath="//button[@class='btn btn-primary action']")
 	public WebElement saveContacts;
 	
+	@FindBy(xpath="//button[@class='btn btn-danger']")
+	public WebElement savePopUp;
+	
 }
