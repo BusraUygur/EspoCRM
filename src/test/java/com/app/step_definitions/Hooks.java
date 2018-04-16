@@ -16,7 +16,7 @@ public class Hooks {
 	@Before
 	public void setUp(Scenario scenario) {
 		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Driver.getDriver().manage().window().fullscreen();
+		//Driver.getDriver().manage().window().fullscreen();
 	}
 
 	@After

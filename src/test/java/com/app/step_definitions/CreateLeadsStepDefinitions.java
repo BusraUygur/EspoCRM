@@ -2,6 +2,8 @@ package com.app.step_definitions;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.List;
+
 import com.app.pages.CreateLeadsPage;
 import com.app.pages.EspoCRMLoginPage;
 import com.app.utilities.ConfigurationReader;
@@ -41,14 +43,14 @@ public class CreateLeadsStepDefinitions {
 	public void i_should_see_the_lead_in_the_page() {
 		String actual = "Sar";
 		String expected = leadsPage.firstName.getText();
-		assertEquals(actual, expected);
+		assertEquals(expected, actual);
 	}
 
 	@Then("^I should see the Lead information for \"([^\"]*)\"$")
 	public void i_should_see_the_Lead_information_for(String arg1) {
 		String actual = "Sar Smith";
 		String expected = leadsPage.showName.getText();
-		assertEquals(actual, expected);
+		assertEquals(expected, actual);
 	}
 
 }

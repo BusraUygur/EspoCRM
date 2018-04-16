@@ -74,7 +74,7 @@ public class CreateOpportunitiesPage {
 	public WebElement personIsInStream;
 	
 	@FindBy(xpath="(//div[@data-name='name'])[2]")
-	public WebElement checkNameInOpportunies;
+	public WebElement checkNameInOpportunies;  
 	
 	@FindBy(xpath="//td[@data-name='account']")
 	public WebElement checkAccountInOpportunies;

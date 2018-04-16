@@ -22,7 +22,7 @@ public class CreateOpportunitiesStepDefinitions {
 	public void i_create_a_new_Opportunity() {
 		opportunitiesPage.createOpportunity.click();
 		opportunitiesPage.name.click();
-		opportunitiesPage.name.sendKeys("Sarah");
+		opportunitiesPage.name.sendKeys("Bobb");
 		opportunitiesPage.amount.click();
 		opportunitiesPage.amount.sendKeys("100000");
 		opportunitiesPage.closeDate.click();
@@ -43,15 +43,15 @@ public class CreateOpportunitiesStepDefinitions {
         String actual = "comment";
         System.out.println(expected);
         System.out.println(actual);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 	}
 
 	
 	@Then("^I should see the Opportunity information for new Opportunity$")
 	public void i_should_see_the_Opportunity_information_for_new_Opportunity() {
 		String expected = opportunitiesPage.checkNameInOpportunies.getText();
-        String actual = "Sarah";
-        assertEquals(actual, expected);
+        String actual = "Bobb";
+        assertEquals(expected, actual);
 	}
 	
 	
